@@ -1,0 +1,14 @@
+---
+title: Junior High School Robocon 2014
+subtitle: みはっしー (Mihassy)
+tags: robot
+cover: robocon2014/main.jpg
+lastdate: 2021-09-23
+---
+
+I participated in Application Category named "Shooting Star".
+
+.. figure::../images/robocon2014/main.jpg
+   :alt: Mihassy
+   :width: 500px
+   Mihassy

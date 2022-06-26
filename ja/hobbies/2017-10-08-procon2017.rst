@@ -1,0 +1,112 @@
+---
+title: 高専プロコン2017競技部門
+subtitle: 中国山地のパズドラゴン
+tags: csharp, wpf, win32, opencv, kosen-procon
+cover: procon2017/solver2.png
+lastdate: 2021-09-23
+---
+ * `GitHub Wiki Home <https://github.com/mct-procon/procon2017-protocol/wiki/Procon2017-Home>`_ : https://github.com/mct-procon/procon2017-protocol/wiki/Procon2017-Home
+ * `GitHub Repository(Solver) <https://github.com/mct-procon/procon2017-solver>`_: https://github.com/mct-procon/procon2017-solver
+ * `GitHub Repository(Scanner) <https://github.com/mct-procon/procon2017-scanner>`_: https://github.com/mct-procon/procon2017-scanner
+ * `GitHub Repository(Protocol) <https://github.com/mct-procon/procon2017-protocol>`_: https://github.com/mct-procon/procon2017-protocol
+
+`全国高等専門学校プログラミングコンテスト2017`_ 競技部門に参加しました．
+山口県周南市で開催され，特別賞（3位相当）でした．（どうでもいいところで手間かかってるの草）
+
+ルール概要
+=============
+多角形パズル（物理）を渡されます．
+
+.. raw::html
+
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); width: 100%;">
+        <div style="margin: 2em"><img style="max-width: 100%; max-height: 40vh; object-fit: scale-down;" src="../images/procon2016/img011.jpg" alt="Puzzle Piece"><br>Puzzle Piece</div>
+        <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2016/SANY1464.jpg" alt="Puzzle Frame"><br>Puzzle Frame</div>
+    </div>
+
+これを読み取ってパソコンで解きます．
+
+.. raw::html
+
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); width: 100%;">
+        <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2017/solver1.jpg" alt="Solving Puzzle"><br>Solving Puzzle</div>
+        <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2017/solver2.png" alt="Solving Puzzle2"><br>Solving Puzzle2</div>
+    </div>
+
+前年と違うのは，QRコードでヒント情報や，そもそもの図形のベクトルデータが渡される点です．
+QRコードの情報を使うと，減点されます．
+
+コンポーネント全体
+======================
+
+パズルをスキャナで読み取らずに，QRコードを読み取るスキャナ（PuzzleSupporter）と実際にパズルを解くソルバ（PuzzleSolver）に分かれます．
+スキャナは私が，ソルバはチームメンバの川上さんが担当しました．
+スキャナは，組み立てるときにどのピースが画面上のどこに配置されているか，を示してくれます．
+これによって，非常にパズルを速くくみ上げることに成功しました．（フレームにはまるとは言ってない）
+
+.. figure::../images/procon2017/hoge.jpg
+   :alt: Overview
+   :width: 500px
+   Overview
+
+これは初期段階の絵で，実際は，下にディスプレイを敷いて，そのうえでパズルを組みます．
+別の用途に使おうと思っていた私のアクリル板は犠牲となったのだ…
+
+IPC
+=====
+
+前回，テキストファイルのやり取りでスキャナとソルバ間の情報をやり取りしていたので，リアルタイムにすべく，Windows Communication Frameworkを用いてIPCしました．
+
+スキャナ
+=========
+.. raw::html
+
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, auto); width: 100%;">
+        <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2017/scan1.jpg" alt="Scan piece"><br>Scan piece</div>
+        <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2017/scan2.jpg" alt="Final version of supporter"><br>Final version of supporter</div>
+        <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2017/scan3.jpg" alt="Binalize"><br>Binalize</div>
+        <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2017/scan4.jpg" alt="QR reading"><br>QR reading</div>
+    </div>
+
+詳しくはプロコン2016の記事を見ると良いでしょう．同じことをリアルタイムにやってるだけです．
+.Net Framework 4.5, WPF, Emgu.OpenCV 3.0, ZXing.Netを用いました．
+
+ソルバ
+========
+
+私が開発したわけではない（川上さん担当）ので，ざっと説明しますが，「結合度」による，「ビームサーチ」を行います．
+結合度は，次の要因により増加します．
+
+    - 辺の一致
+    - 辺が途中まで一致
+    - 角が180度になる
+    - 角が360度になる
+
+.. figure::../images/procon2017/connectivity.jpg
+   :alt: Connectivity Value
+   :width: 500px
+   Connectivity
+
+これは，人の組み方を真似しています．
+
+Microsoft Visual C# 2015, DxLibを用いました．
+
+（実行画面は最初の方に出しています．）
+
+
+完走した感想
+==============
+
+1位のチームは，高そうなスキャナ2台ですか…やべぇ…
+もう少し画像処理能力を高めれたらなと思いましたが，1位のチームは去年からずっと研究していたそうです．やばいなぁ
+
+ともかく，特別賞を頂けてよかったです．2年目ということもありスケジュール管理などがうまくいった気がします．
+
+Related Links
+================
+
+ * `松江高専情報工学科の該当記事`_
+
+
+.. _全国高等専門学校プログラミングコンテスト2017: https://www.procon.gr.jp/?page_id=59121
+.. _松江高専情報工学科の該当記事: http://www.matsue-ct.jp/it/index.php/48-topics/topics2017b/299-topics20171013

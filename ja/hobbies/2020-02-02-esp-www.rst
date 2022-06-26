@@ -1,0 +1,6 @@
+---
+title: ESP32向け静的Webサーバ（未執筆）
+subtitle: esp32-www
+tags: arduino, fat32, esp32, http
+lastdate: 2021-09-23
+---

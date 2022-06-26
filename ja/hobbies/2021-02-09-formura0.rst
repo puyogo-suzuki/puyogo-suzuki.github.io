@@ -1,0 +1,14 @@
+---
+title: ステンシル計算DSL（TBD）
+subtitle: Formura0
+tags: haskell
+lastdate: 2021-09-23
+---
+
+TBD
+
+Related Links
+================
+
+ * `Paraiso: a code generator for partial differential equations solvers. <https://hackage.haskell.org/package/Paraiso>`_
+ * `formura: Formura is a simple language to describe stencil computation. <https://hackage.haskell.org/package/formura>`_

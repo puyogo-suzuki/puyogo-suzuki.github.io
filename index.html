@@ -1,0 +1,59 @@
+---
+title: Home
+lastdate: 2022-04-15
+---
+
+<h2>Go Suzuki's Web site</h2>
+
+<p>Welcome.</p>
+
+<h3>Accounts</h3>
+<h4>Not Anonymous</h4>
+<p>
+    <a href="https://github.com/puyogo-suzuki">Git : puyogo-suzuki</a><br>
+    <a href="https://www.facebook.com/puyogo.suzuki/">Facebook</a><br>
+    Mail： puyogo.suzuki@   Google E-Mail  .com<br>
+    I have also email accounts of hotmail.co.jp，and titech.ac.jp.(The user names are different.)
+</p>
+<h4>Anonymous（Go + nickname -> Go + nic -> G + nic + O -> Gnico）</h4>
+<p>
+    <a href="https://twitter.com/GnicoGplus">Twitter : GnicoGplus (2013 - )</a><br>
+    <a href="https://bitbucket.org/gnico_gplus/">BitBucket : Gnico (2013 - 2018)</a><br>
+    <a href="https://github.com/gnicojp">Git : GnicoJP (2018 - )</a><br>
+    I have email accounts of gmail.com，yandex.com, and yahoo.co.jp.
+</p>
+
+<p>Recent contents are below:</p>
+
+<div>
+    <h2>Posts(English)</h2>
+    <ul class="recent-list">
+        $for(postsen)$
+            <li>
+                <a href="$url$">
+                    <span class="date">$date$</span><br>
+                    $title$ 
+                    $if(author)$
+                        by $author$
+                    $endif$
+                </a>
+            </li>
+        $endfor$
+    </ul>
+    <p><a href="/en/posts.html">older posts...</a></p>
+    <h2>Posts(Japanese)</h2>
+    <ul class="recent-list">
+        $for(postsja)$
+            <li>
+                <a href="$url$">
+                    <span class="date">$date$</span><br>
+                    $title$ 
+                    $if(author)$
+                        by $author$
+                    $endif$
+                </a>
+            </li>
+        $endfor$
+    </ul>
+    <p><a href="/ja/posts.html">older posts...</a></p>
+</div>

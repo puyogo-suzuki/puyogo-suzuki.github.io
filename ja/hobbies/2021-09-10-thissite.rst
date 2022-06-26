@@ -1,0 +1,7 @@
+---
+title: このサイト（未執筆）
+subtitle: puyogo-suzuki.github.io
+tags: haskell, web, hakyll
+---
+
+HaskellとHakyllを用いて，このサイトを作りました．

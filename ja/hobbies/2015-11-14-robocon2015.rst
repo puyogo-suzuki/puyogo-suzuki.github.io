@@ -1,0 +1,14 @@
+---
+title: 中学生ロボコン2015
+tags: robot, avr
+cover: robocon2015/main.jpg
+lastdate: 2021-09-23
+---
+
+応用部門「Shooting Star Second Season」に参加しました．
+（ひでぇ写真しか残ってねえ）
+
+.. figure::../images/robocon2015/main.jpg
+   :alt: ロボット
+   :width: 500px
+   ロボット

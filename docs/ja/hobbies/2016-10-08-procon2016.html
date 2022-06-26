@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Go Suzukiのページ - 高専プロコン2016人力部門</title>
+        <link rel="stylesheet" href="../../css/default.css" />
+    </head>
+    <body>
+        <aside>
+            <div class="menu">
+                MENU
+            </div>
+            <div class="ja-split">English Pages</div>
+            <nav>
+                <a href="../../">Home</a>
+                <!-- <a href="/en/posts.html">Posts</a> -->
+                <a href="../../en/about.html">About</a>
+                <a href="../../en/cvs.html">CV</a>
+                <!-- <a href="/en/hobbies.html">Hobbies<br>Projects</a> -->
+            </nav>
+            <div class="ja-split">日本語ページ</div>
+            <nav>
+                <a href="../../index-ja.html">ホーム</a>
+                <a href="../../ja/posts.html">投稿</a>
+                <a href="../../ja/about.html">自己紹介</a>
+                <a href="../../ja/cvs.html">CV</a>
+                <a href="../../ja/hobbies.html">悪行</a>
+            </nav>
+        </aside>
+        <div>
+            <header>
+                <h1>高専プロコン2016人力部門</h1>
+                
+                <h2>そんなパズルは壊してしまえ</h2>
+                
+            </header>
+
+            <main role="main">
+                <article>
+    <section class="subheader">
+        2016-10-08
+    </section>
+    <section class="tags">
+        
+            <a href="../../ja/hobbies/tag/csharp.html">csharp</a><a href="../../ja/hobbies/tag/wpf.html">wpf</a><a href="../../ja/hobbies/tag/win32.html">win32</a><a href="../../ja/hobbies/tag/opencv.html">opencv</a><a href="../../ja/hobbies/tag/imaging.html">imaging</a><a href="../../ja/hobbies/tag/ai.html">ai</a><a href="../../ja/hobbies/tag/kosen-procon.html">kosen-procon</a>
+        
+    </section>
+    <section>
+        <p><a href="https://github.com/mct-procon/procon2016/tree/ProductionVersion">GitHub Repository</a>: <a href="https://github.com/mct-procon/procon2016/tree/ProductionVersion">https://github.com/mct-procon/procon2016/tree/ProductionVersion</a></p>
+<p><a href="https://www.procon.gr.jp/?page_id=59141">全国高等専門学校プログラミングコンテスト2016</a> 競技部門に参加しました． 三重県伊勢市で開催され，1回戦敗退でした．（人力部門なのにコンピュータで頑張って解こうとしたので当たり前だよなぁ？）</p>
+<h1 id="ルール概要">ルール概要</h1>
+<p>多角形パズル（物理）を渡されます．</p>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); width: 100%;">
+    <div style="margin: 2em"><img style="max-width: 100%; max-height: 40vh; object-fit: scale-down;" src="../images/procon2016/img011.jpg" alt="Puzzle Piece"><br>Puzzle Piece</div>
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2016/SANY1464.jpg" alt="Puzzle Frame"><br>Puzzle Frame</div>
+</div>
+<p>これを読み取ってパソコンで解きます．</p>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); width: 100%;">
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2016/solver.png" alt="Solving Puzzle"><br>Solving Puzzle</div>
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2016/solver2.png" alt="Solving with error"><br>Solving Puzzle with Error</div>
+</div>
+<h1 id="コンポーネント全体">コンポーネント全体</h1>
+<p>パズルをスキャナで読み取り，ベクタ化するスキャナ（Scanner, SonnaPuzzle.exe）と実際にパズルを解くソルバ（Solver, PuzzleSolver.vs2015.exe）に分かれます． スキャナは私が，ソルバはチームメンバの川上さんが担当しました．</p>
+<h1 id="スキャナ">スキャナ</h1>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, auto); width: 100%;">
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2016/scan1.png" alt="First Step"><br>First Step</div>
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2016/scan2.jpg" alt="Choosing Step"><br>Choosing Step</div>
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2016/scan3.jpg" alt="Binalize Step"><br>Binalize Step</div>
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2016/scan4.jpg" alt="Detection Step"><br>Detection Step(a bit old version)</div>
+    <div style="margin: 2em; grid-column: 1/3;"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2016/scan5.jpg" alt="Detection Step"><br>Detection Step(very old version)</div>
+</div>
+<dl>
+<dt>OpenCVの関数を使いまくります．</dt>
+<dd><ol type="1">
+<li>HSVで2値化します．（自分でコードを書いているっぽいです．）</li>
+<li>OpenCVのFindContours関数を用いて，境界を抽出します．</li>
+<li>OpenCVのApproxPolyDP関数を用いて，ベクトル化します．</li>
+</ol>
+</dd>
+</dl>
+<p>新しい物好きでSIMD（<code>System.Numerics.Vector</code>）使ってるよこいつ… カスケード検出器使って，図形のタグ付けもしようとしていましたが，遅すぎでしたね… パノラマ機能も使っていません．</p>
+<p>ルールで，頂点はすべて5mm×5mmの方眼上に配置される，みたいなのがあれば，ApproxPolyDPよりも精度の高い検出方法を考えよう！みたいことができたと思うんですけどね…</p>
+<p>.Net Framework 4.6, WPF, Emgu.OpenCV 3.0（OpenCLやっほい）を用いました．あと，カメラの画像も取得できますが，使った記憶がありません．</p>
+<h1 id="ソルバ">ソルバ</h1>
+<p>私が開発したわけではない（川上さん担当）ので，ざっと説明しますが，「結合度」による，「ビームサーチ」を行います． 結合度は，次の要因により増加します．</p>
+<blockquote>
+<ul>
+<li>辺の一致</li>
+<li>角が180度になる</li>
+<li>角が360度になる</li>
+</ul>
+</blockquote>
+<figure>
+<img src="../images/procon2016/connectivity.png" width="500" />
+</figure>
+<blockquote>
+<p>Connectivity</p>
+</blockquote>
+<p>これは，人の組み方を真似しています．</p>
+<p>Microsoft Visual C++ 2015, DxLibを用いました．</p>
+<p>（実行画面は最初の方に出しています．）</p>
+<h1 id="乾燥した感想">乾燥した感想</h1>
+<p>1位のチームがコンピュータ使っているのかは知りませんが，使っていなかったらたまげてそう． 皆さんの人力アピール，徹夜アピールが面白かったです． ソルバの開発が遅くて，バスの中で仕様変更に対応するためにコード書いてた思い出があります． というか，高専入って早々，なんで一人で1コンポーネント担当しなきゃいけないんですかね…</p>
+<h1 id="related-links">Related Links</h1>
+<blockquote>
+<ul>
+<li><a href="http://www.matsue-ct.jp/it/index.php/46-topics/topics2016b/283-topics20161020">松江高専情報工学科の該当記事</a></li>
+<li><a href="2017-03-13-comfes2017.html">コンピュータフェスティバル2017</a></li>
+</ul>
+</blockquote>
+    </section>
+</article>
+
+            </main>
+
+            <footer>
+                
+                    最終更新: 2021-09-23<br>
+                
+                Copyright Go Suzuki, All Rights Reserved.<br>
+                Site proudly generated by
+                <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+            </footer>
+        </div>
+    </body>
+</html>

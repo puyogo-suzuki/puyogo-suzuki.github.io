@@ -1,0 +1,90 @@
+---
+title: 非公式高専プロコン2020 競技部門
+subtitle: AngryBee
+tags: csharp, wpf, win32, kosen-procon, ai
+cover: procon2020/main.png
+lastdate: 2021-09-23
+---
+ * `GitHub Repository(AI) <https://github.com/mct-procon/procon2020-AI-A>`_: https://github.com/mct-procon/procon2020-AI-A
+ * `GitHub Repository(Interface) <https://github.com/mct-procon/procon2020-Interface>`_: https://github.com/mct-procon/procon2020-Interface
+ * `GitHub Repository(Protocol) <https://github.com/mct-procon/procon2020-protocol>`_: https://github.com/mct-procon/procon2020-protocol
+
+非公式 全国高等専門学校プログラミングコンテスト2020 競技部門に参加しました．
+オンラインで開催され，優勝でした．（じゃんけん）
+
+ルール概要
+=============
+陣取りゲームで，2プレイヤーがそれぞれ最大16のエージェントを2プレイヤー同時に動かしていきます．
+
+.. figure::../images/procon2018/rule.jpg
+   :alt: Rule
+   :width: 500px
+   Rule
+
+エージェントは8方向に動くことができます．
+エージェントが動いた後のマスは陣地となります．
+陣地となったマスは相手チームのエージェントは入ることができません．
+1ターン消費して．そのマスを陣地から解放する作業が必要になります．
+得点としては2種類あって，まずは「占有得点」について説明します．
+占有得点は，エージェントが通った後，陣地になったマスがそのまま得点となります．
+それぞれのマスに最大16点，最低-16点割り振られています．
+一方，「包囲得点」は，陣地によってマスを囲むと，そのマスの絶対値が得点となります．
+つまり，-16のマスを占有で得点すると，16点引かれてしまうのに対して，囲って得点すると，16点もらえるということになります．
+囲むときに，頂点の部分は陣地である必要があります．
+
+.. figure::../images/procon2020/normal.png
+   :alt: Fighting
+   :width: 1000px
+   Fighting
+
+コンポーネント全体
+======================
+
+サーバと通信したり，AIの手を表示したりするInterfaceと，思考するAIに分かれます．
+私はすべて作りました．
+.NET CORE 3.1, WPFを用いました．
+
+IPC
+=====
+
+前回から変更なしです．
+
+Interface
+============
+通信や，手の表示をしたりします．
+
+.. figure::../images/procon2020/test.png
+   :alt: Test with sample server
+   :width: 1000px
+   Test with sample server
+
+AI
+========
+
+エージェントを1体ずつ動かして，並列に探索します．
+評価値の工夫として，そのままゲームの得点を使うのではなく，包囲得点を減点したり，自陣の分散度合いを吟味したりしました．
+
+.. figure::../images/procon2020/multithread.png
+   :alt: Happy at multithreading
+   :width: 1000px
+   Happy at multithreading
+
+256スレッド（2NUMAノード）のEPYCプロセッサをめいっぱい動かして楽しんでいます．
+
+完走した感想
+==============
+
+.. figure::../images/procon2020/display.jpg
+   :alt: Seeking from real world
+   :width: 1000px
+   Seeking from real world
+
+今回，大きい，中，小さいフィールド3種類で対戦しました．（vs 久留米，東京，舞鶴）
+それぞれのAIで強い弱いが変わり，最終的に均衡するのが面白いです．
+なので，東京，久留米，松江は同率一位となり，じゃんけんで松江高専が優勝しました．（えぇ…）
+
+ちなみに，並列化の効能ですが，深さが1つ深く読める程度です（そりゃそうだ）
+
+Related Links
+====================
+ * `Youtube Live<https://www.youtube.com/watch?v=og-LH_QKhTc>`_

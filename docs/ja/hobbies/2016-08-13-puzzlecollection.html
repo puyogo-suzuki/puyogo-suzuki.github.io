@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Go Suzukiのページ - 落ちものゲームの寄せ集め（途中執筆）</title>
+        <link rel="stylesheet" href="../../css/default.css" />
+    </head>
+    <body>
+        <aside>
+            <div class="menu">
+                MENU
+            </div>
+            <div class="ja-split">English Pages</div>
+            <nav>
+                <a href="../../">Home</a>
+                <!-- <a href="/en/posts.html">Posts</a> -->
+                <a href="../../en/about.html">About</a>
+                <a href="../../en/cvs.html">CV</a>
+                <!-- <a href="/en/hobbies.html">Hobbies<br>Projects</a> -->
+            </nav>
+            <div class="ja-split">日本語ページ</div>
+            <nav>
+                <a href="../../index-ja.html">ホーム</a>
+                <a href="../../ja/posts.html">投稿</a>
+                <a href="../../ja/about.html">自己紹介</a>
+                <a href="../../ja/cvs.html">CV</a>
+                <a href="../../ja/hobbies.html">悪行</a>
+            </nav>
+        </aside>
+        <div>
+            <header>
+                <h1>落ちものゲームの寄せ集め（途中執筆）</h1>
+                
+                <h2>PuzzleCollection</h2>
+                
+            </header>
+
+            <main role="main">
+                <article>
+    <section class="subheader">
+        2016-08-13
+    </section>
+    <section class="tags">
+        
+            <a href="../../ja/hobbies/tag/game.html">game</a><a href="../../ja/hobbies/tag/csharp.html">csharp</a><a href="../../ja/hobbies/tag/monogame.html">monogame</a><a href="../../ja/hobbies/tag/skia.html">skia</a><a href="../../ja/hobbies/tag/xamarin.html">xamarin</a><a href="../../ja/hobbies/tag/uwp.html">uwp</a>
+        
+    </section>
+    <section>
+        <p>ぷよぷよとテトリスで対戦できる落ちものパズルゲーの寄せ集めゲームです． .Net Framework 4.5（→4.7），MonoGame 3.7（→3.8）, Xamarin.Android, 2016年代のUWPを用いました． Windows Vista以降，Linux，Windows 10 Mobile，Android 4.0以降で動作していました． （現在は，Windows 8.1以降，Linux，Android 8.0以降）</p>
+<h1 id="年4月バージョン0.1.17.4xx">2017年4月（バージョン～0.1.17.4xx）</h1>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, auto); width: 100%;">
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/puzzlecollection/2017_04_title.jpg" alt="Title of PuzzleCollection 0.1.17.409"><br>Title of PuzzleCollection 0.1.17.409</div>
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/puzzlecollection/2017_04_tsu.jpg" alt="Puyo pop tsu (0.1.17.409)"><br>Puyo pop tsu (0.1.17.409)</div>
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/puzzlecollection/2017_04_guideline.jpg" alt="Gudeline tetris (0.1.17.409)"><br>Gudeline tetris (0.1.17.409)</div>
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/puzzlecollection/2017_04_sega.jpg" alt="Sega tetris (0.1.17.409)"><br>Sega tetris (0.1.17.409)</div>
+    <div style="margin: 2em; grid-column: 1/3;"><img style="max-width: 100%;object-fit: scale-down;" src="../images/puzzlecollection/2017_04_battle.jpg" alt="Battle, Puyo pop SUN vs Guideline Tetris (0.1.17.409)"><br>Battle, Puyo pop SUN vs Guideline Tetris (0.1.17.409)</div>
+</div>
+<p>学校の春休み課題に提出しました． ぷよぷよは，ぷよの消去判定よりは，ぷよの落下速度をうまい感じに決めること，ぷよぷよが接地するときに，ぷよってするアニメーションにこだわりました． テトリスはTスピンの仕様をあんまり理解せずに実装したので，若干判定などが異なるようです．（素人にはわかりませんが）</p>
+<p>この時点で，DirectX, OpenGL, Android（設定画面未実装）, UWP（設定画面未実装）で動いていました．Monogameすごい！</p>
+<h2 id="新規ゲームルール">新規ゲームルール</h2>
+<blockquote>
+<ul>
+<li>ぷよぷよ</li>
+<li>ぷよぷよ通</li>
+<li>ぷよぷよ通（おつりあり）</li>
+<li>ぷよぷよSUN</li>
+<li>ぷよぷよSUN（GB版）</li>
+<li>ガイドラインテトリス</li>
+<li>セガテトリス</li>
+<li>異次元ステージ</li>
+</ul>
+</blockquote>
+<h2 id="動画一覧youtube">動画一覧(Youtube)</h2>
+<blockquote>
+<ul>
+<li>ぷよぷよ通ルール <a href="https://youtu.be/XT9K48qb9h8">https://youtu.be/XT9K48qb9h8</a></li>
+<li>ガイドラインテトリスルール <a href="https://youtu.be/Ien5FlKvhvk">https://youtu.be/Ien5FlKvhvk</a></li>
+<li>セガテトリスルール <a href="https://youtu.be/WpsQ7CAhSVU">https://youtu.be/WpsQ7CAhSVU</a></li>
+<li>2人対戦 <a href="https://youtu.be/mOWsOM3glz0">https://youtu.be/mOWsOM3glz0</a></li>
+</ul>
+</blockquote>
+<h2 id="related-links">Related Links</h2>
+<blockquote>
+<ul>
+<li><a href="http://www.matsue-ct.jp/it/index.php/47-topics/topics2017a/296-topics20170525">松江高専情報工学科の該当記事</a></li>
+</ul>
+</blockquote>
+<h1 id="年8月バージョン0.1.17.4110.1.17.827">2017年8月（バージョン0.1.17.411～0.1.17.827）</h1>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, auto); width: 100%;">
+    <div style="margin: 2em;"><img style="max-width: 100%;object-fit: scale-down;" src="../images/puzzlecollection/PuzzleCollection.png" alt="Logo of PuzzleCollection"><br>Logo of PuzzleCollection</div>
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/puzzlecollection/2017_08_tsu.jpg" alt="Puyo pop tsu (0.1.17.827)"><br>Puyo pop tsu (0.1.17.827)</div>
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/puzzlecollection/2017_08_guideline.jpg" alt="Gudeline tetris (0.1.17.827)"><br>Gudeline tetris (0.1.17.827)</div>
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/puzzlecollection/2017_08_yon.jpg" alt="Puyo pop 4 (0.1.17.827)"><br>Puyo pop 4 (0.1.17.827)</div>
+    <div style="margin: 2em; grid-column: 1/3;"><img style="max-width: 100%;object-fit: scale-down;" src="../images/puzzlecollection/2017_08_battle.jpg" alt="Battle, 8 players (0.1.17.827)"><br>Battle, 8 players (0.1.17.827)</div>
+</div>
+<p>学校のオープンキャンパスに使われました．</p>
+<p>バグや操作感覚を修正した他に，ガイドラインテトリスルールではやっとT-Spinボーナスを追加，バランス修正などをしました． また，目玉として， <strong>Wiiリモコン</strong> と <strong>8人対戦</strong> に対応しました．非携帯機で8人対戦可能はPuzzleCollectionが一番最初ですね．</p>
+<p>なお，この時期のPuzzleCollectionはIntelのCPUでは動作しますが，AMDのCPUではマルチスレッド関連の処理で排他制御失敗しているのでクラッシュします．</p>
+<h2 id="新規ゲームルール-1">新規ゲームルール</h2>
+<blockquote>
+<ul>
+<li>クイックステージ</li>
+<li>ぷよぷよ～ん</li>
+</ul>
+</blockquote>
+<h2 id="動画一覧youtube-1">動画一覧(Youtube)</h2>
+<blockquote>
+<ul>
+<li>2人対戦 <a href="https://youtu.be/4wV-ZeWyGr8">https://youtu.be/4wV-ZeWyGr8</a></li>
+<li>ぷよぷよ～んルール <a href="https://youtu.be/s95SlBvCOa0">https://youtu.be/s95SlBvCOa0</a></li>
+<li>T-Spin <a href="https://youtu.be/IaThuAVVQwc">https://youtu.be/IaThuAVVQwc</a></li>
+<li>8人対戦 <a href="https://youtu.be/WFJtuX0QAOI">https://youtu.be/WFJtuX0QAOI</a></li>
+</ul>
+</blockquote>
+<h1 id="puzzlecollection-ultimate2018年4月1日バージョン0.0.17.9030.0.2018.327-0.0.2018.401">PuzzleCollection Ultimate（2018年4月1日,バージョン0.0.17.903～0.0.2018.327, 0.0.2018.401）</h1>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, auto); width: 100%;">
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/puzzlecollection/2018_04_ultimate_title.jpg" alt="Title of PuzzleCollection Ultimate (0.1.2018.401)"><br>Title of PuzzleCollection Ultimate (0.1.2018.401)</div>
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/puzzlecollection/2018_04_ultimate.jpg" alt="PuzzleCollection Ultimate (0.1.2018.401)"><br>PuzzleCollection Ultimate (0.1.2018.401)</div>
+</div>
+<p>Tetris Effectがエフェクトマシマシでプレイしずらそうなのと，Tetris Ultimateがバグばっかりなので，エイプリルフールに，ブルームマシマシ，たまに固まるバージョンのPuzzle Collectionを部内に放流しました．</p>
+<p>地味にハーピーAIを搭載しています．</p>
+<h1 id="年8月バージョン0.1.2018.6100.0.2018.730">2018年8月（バージョン0.1.2018.610～0.0.2018.730）</h1>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, auto); width: 100%;">
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/puzzlecollection/2018_08_tsu.jpg" alt="Puyo pop tsu (0.1.2018.930)"><br>Puyo pop tsu (0.1.2018.930)</div>
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/puzzlecollection/2018_08_guideline.jpg" alt="Guideline tetris (0.1.2018.930)"><br>Guideline tetris (0.1.2018.930)</div>
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/puzzlecollection/2018_08_curry.jpg" alt="Difficulty selection (0.1.2018.930)"><br>Difficulty selection (0.1.2018.930)</div>
+    <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/puzzlecollection/2020_06_rule.jpg" alt="Rule selection (0.1.2020.607)"><br>Rule selection (0.1.2020.607)</div>
+</div>
+<p>ルール追加とかはせずに，操作性向上を目指した時期です．難易度選択がそれらしくなった他，ルール選択画面も新しくなりました． （その時代の実行ファイルも画像データも無かったので，今のルール選択画面を表示しています．）</p>
+<p>チーム対戦もできるようになりました．</p>
+<h2 id="新規ゲームルール-2">新規ゲームルール</h2>
+<blockquote>
+<ul>
+<li>でかぷよステージ</li>
+</ul>
+</blockquote>
+<h2 id="動画一覧youtube-2">動画一覧(Youtube)</h2>
+<blockquote>
+<ul>
+<li>ぷよぷよ通ルール <a href="https://youtu.be/aw_a7R3Uzao">https://youtu.be/aw_a7R3Uzao</a></li>
+<li>ガイドラインテトリスルール <a href="https://youtu.be/xqwrQiLbK0U">https://youtu.be/xqwrQiLbK0U</a></li>
+</ul>
+</blockquote>
+<h1 id="年8月バージョン0.1.2018.7310.0.2019.808">2019年8月（バージョン0.1.2018.731～0.0.2019.808）</h1>
+<p>TBD</p>
+<p>目玉はぷよぷよフィーバーです．</p>
+<h2 id="新規ゲームルール-3">新規ゲームルール</h2>
+<blockquote>
+<ul>
+<li>ぷよぷよフィーバー</li>
+</ul>
+</blockquote>
+    </section>
+</article>
+
+            </main>
+
+            <footer>
+                
+                    最終更新: 2021-09-23<br>
+                
+                Copyright Go Suzuki, All Rights Reserved.<br>
+                Site proudly generated by
+                <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+            </footer>
+        </div>
+    </body>
+</html>

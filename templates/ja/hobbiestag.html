@@ -1,0 +1,25 @@
+<div class="hobbies">
+    $for(posts)$
+        <a href="$url$">
+            $if(cover)$
+            <img src="../../images/$cover$" style="object-fit: cover;">
+            $else$
+            $if(out-cover)$
+            <img src="$out-cover$" style="object-fit: cover;">
+            $else$
+            <div class="noimg"><span>画像なし</span></div>
+            $endif$
+            $endif$
+            <article>
+                <span class="date">$date$</span>
+                <span class="title">$title$</span>
+                $if(subtitle)$
+                    <span class="subtitle">$subtitle$</span>
+                $endif$
+                $if(tags)$
+                    <div class="tags">$tags$</div>
+                $endif$
+            </article>
+        </a>
+    $endfor$
+</div>

@@ -1,0 +1,14 @@
+---
+title: 中学生ロボコン2014
+subtitle: みはっしー
+tags: robot
+cover: robocon2014/main.jpg
+lastdate: 2021-09-23
+---
+
+応用部門「Shooting Star」に参加しました．
+
+.. figure::../images/robocon2014/main.jpg
+   :alt: みはっしー
+   :width: 500px
+   みはっしー

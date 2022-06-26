@@ -1,0 +1,316 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #000;
+  display: grid;
+  margin: 0 auto 0 auto;
+  padding: 0;
+}
+
+body > aside {
+  border-width: 0;
+  border-style: solid;
+  border-color: black;
+  margin: 1em;
+  padding: 1em;
+}
+
+body > div {
+  overflow: auto;
+}
+
+header {
+  border-bottom: 0.2rem solid #000;
+}
+header > h1 {
+  margin-bottom: 0;
+}
+header > h2 {
+  margin: 0;
+}
+
+nav {
+  text-align: right;
+}
+
+nav > a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav > div.ja-split {
+  font-size: 2rem;
+  margin-top: 1em;
+  color: black;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1.2rem 0;
+  border-top: 0.2rem solid #000;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+article > .subheader {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #555;
+}
+article > section.tags {
+  display: flex;
+}
+article > section.tags > a {
+  display: block;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  color: black;
+  background-color: white;
+  margin: 2px;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+article > section.tags > a:hover {
+  color: white;
+  background-color: black;
+}
+
+.logo a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+ul.recent-list {
+  padding: 0;
+}
+ul.recent-list > li {
+  margin: 2px;
+  padding: 0;
+  list-style: none;
+}
+ul.recent-list > li > a{
+  display: block;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  margin: 0.5em;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  padding:  0.2em 1em 0.2em 1em;
+}
+ul.recent-list > li > a:hover{
+  background-color: lightgray;
+}
+ul.recent-list > li > a > span.date {
+  color: gray;
+  font-size: 0.8em;
+}
+
+div.hobbies {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  flex-wrap: wrap;
+}
+
+div.hobbies > a {
+  display: grid;
+  min-width: 18em;
+  max-width: 24em;
+  border-width: 2px;
+  border-style: solid;
+  text-decoration: none;
+  margin: 0.5em 0.5em 0 0;
+  grid-template-rows: auto max-content;
+  transition-duration: 0.5s;
+}
+div.hobbies > a:hover {
+  background-color: lightgray;
+}
+div.hobbies > a > img {
+  height: 10em;
+  width: 100%;
+  grid-row: 1/2;
+}
+div.hobbies > a > div.noimg {
+  height: 10em;
+  width: 100%;
+  grid-row: 1/2;
+  background: gray;
+  font-weight: bold;
+  text-align:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.hobbies > a > div.noimg > span {
+  color:white;
+  font-size: 3em;
+}
+div.hobbies > a > article {
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4px;
+}
+div.hobbies > a > article > span.date{
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-style: solid;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+
+}
+div.hobbies > a > article > span.subtitle {
+  font-size: larger;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+div.hobbies > a > article > span.title {
+  font-weight: bold;
+  font-size: larger;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+div.hobbies > a > article > div.tags {
+  display: flex;
+}
+div.hobbies > a > article > div.tags > a {
+  display: block;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  color: black;
+  background-color: white;
+  margin: 2px;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+div.hobbies > a > article > div.tags > a:hover {
+  color: white;
+  background-color: black;
+}
+
+@media (max-width: 767px) {
+  body {
+    width: 100%;
+    grid-template-rows: max-content 1fr;
+    overflow: auto;
+  }
+  footer {
+    text-align: right;
+  }
+  body > aside {
+    grid-row: 1/2;
+    border-bottom-width: 1px;
+  }
+  body > div {
+    margin-left: 2%;
+    margin-right: 2%;
+    grid-row: 2/3;
+    box-sizing: border-box;
+  }
+  aside > div.ja-split {
+    text-align: center;
+  }
+  aside > nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  aside > nav > a {
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    margin: 2px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    transition-duration: 0.5s;
+    flex-grow: 1;
+  }
+  aside > nav > a:hover {
+    background-color: black;
+    color: white;
+  }
+  aside > div.menu {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 95%;
+    grid-template-columns: max-content 1fr;
+  }
+  footer {
+    text-align: right;
+  }
+  body > aside {
+    max-height: 100vh;
+    grid-column: 1/2;
+    border-right-width: 1pt;
+  }
+  body > div {
+    max-height: 100vh;
+    grid-column: 2/3;
+  }
+  aside > div.ja-split {
+    text-align: right;
+    margin-top: 2em;
+  }
+  aside > nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  aside > nav > a {
+    border-width: 0;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-style: solid;
+    border-color: black;
+    margin: 2px;
+    padding-left: 2em;
+    padding-right: 0.5em;
+    transition-duration: 0.5s;
+  }
+  aside > nav > a:hover {
+    background-color: black;
+    color: white;
+  }
+  aside > div.menu {
+    margin: 0;
+    text-align: right;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    width: 80%;
+  }
+}

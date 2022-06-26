@@ -1,0 +1,14 @@
+---
+title: Junior High School Robocon 2015
+tags: robot, avr
+cover: robocon2015/main.jpg
+lastdate: 2021-09-23
+---
+
+I participated in Application Category named Shooting Star Second Season.
+(Only ugly photos remain....)
+
+.. figure::../images/robocon2015/main.jpg
+   :alt: Robot
+   :width: 500px
+   Robot

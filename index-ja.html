@@ -1,0 +1,58 @@
+---
+title: ホーム
+lastdate: 2022-06-26
+---
+
+<h2>鈴木豪のサイトです．</h2>
+
+<h3>アカウント関連</h3>
+<h4>匿名じゃない</h4>
+<p>
+    <a href="https://github.com/puyogo-suzuki">Git : puyogo-suzuki</a><br>
+    <a href="https://www.facebook.com/puyogo.suzuki/">Facebook</a><br>
+    メール： puyogo.suzuki@Gメール.com<br>
+    hotmail.co.jp，titech.ac.jpのメールアドレスも持ってます．（ユーザ名は違います．）
+</p>
+<h4>一応匿名（Go + nickname -> Go + nic -> G + nic + O -> Gnico, plusはGoogle Plus登録するときに付けて何かその流れでだったかなー）</h4>
+<p>
+    <a href="https://twitter.com/GnicoGplus">Twitter : GnicoGplus (2013 - )</a><br>
+    <a href="https://bitbucket.org/gnico_gplus/">BitBucket : Gnico (2013 - 2018)</a><br>
+    <a href="https://github.com/gnicojp">Git : GnicoJP (2018 - )</a><br>
+    <a href="https://qiita.com/Gnico">Qiita : Gnico (2015 - )</a><br>
+    gmail.com，yandex.com, yahoo.co.jpのメールアドレスも持ってます．
+</p>
+
+<p>最近のコンテンツは次の通り:</p>
+
+<div>
+    <h2>投稿(日本語)</h2>
+    <ul class="recent-list">
+        $for(postsja)$
+            <li>
+                <a href="$url$">
+                    <span class="date">$date$</span><br>
+                    $title$ 
+                    $if(author)$
+                        by $author$
+                    $endif$
+                </a>
+            </li>
+        $endfor$
+    </ul>
+    <p><a href="/en/posts.html">より古い投稿</a></p>
+    <h2>投稿(英語)</h2>
+    <ul class="recent-list">
+        $for(postsen)$
+            <li>
+                <a href="$url$">
+                    <span class="date">$date$</span><br>
+                    $title$ 
+                    $if(author)$
+                        by $author$
+                    $endif$
+                </a>
+            </li>
+        $endfor$
+    </ul>
+    <p><a href="/ja/posts.html">より古い投稿</a></p>
+</div>
