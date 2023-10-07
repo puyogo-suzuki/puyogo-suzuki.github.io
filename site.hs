@@ -2,9 +2,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 import           Data.Monoid (mappend)
 import           Hakyll
-import           Text.Blaze.Html                 (toHtml, toValue, (!))
-import qualified Text.Blaze.Html5                as H
-import qualified Text.Blaze.Html5.Attributes     as A
 --------------------------------------------------------------------------------
 
 config :: Configuration
@@ -89,13 +86,6 @@ main = hakyllWith config $ do
     tagsRules jahobbytags (tagsHCompiler jahobbytags "ja")
 
 --------------------------------------------------------------------------------
--- | Render one tag link
-simpleRenderLink :: String -> (Maybe FilePath) -> Maybe H.Html
-simpleRenderLink _   Nothing         = Nothing
-simpleRenderLink tag (Just filePath) = Just $
-    H.a -- ! A.title (H.stringValue ("All pages tagged '"++tag++"'."))
-        ! A.href (toValue $ toUrl filePath)
-        $ toHtml tag
 
 postCtx :: Tags -> Context String
 postCtx tags =

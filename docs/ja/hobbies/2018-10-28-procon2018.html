@@ -44,7 +44,7 @@
     </section>
     <section class="tags">
         
-            <a href="../../ja/hobbies/tag/csharp.html">csharp</a><a href="../../ja/hobbies/tag/wpf.html">wpf</a><a href="../../ja/hobbies/tag/win32.html">win32</a><a href="../../ja/hobbies/tag/kosen-procon.html">kosen-procon</a>
+            <a title="All pages tagged 'csharp'." href="../../ja/hobbies/tag/csharp.html" rel="tag">csharp</a><a title="All pages tagged 'wpf'." href="../../ja/hobbies/tag/wpf.html" rel="tag">wpf</a><a title="All pages tagged 'win32'." href="../../ja/hobbies/tag/win32.html" rel="tag">win32</a><a title="All pages tagged 'kosen-procon'." href="../../ja/hobbies/tag/kosen-procon.html" rel="tag">kosen-procon</a>
         
     </section>
     <section>
@@ -58,38 +58,53 @@
 <li><a href="https://github.com/mct-procon/procon2018-protocol">GitHub Repository(Protocol)</a>: <a href="https://github.com/mct-procon/procon2018-protocol">https://github.com/mct-procon/procon2018-protocol</a></li>
 </ul>
 </blockquote>
-<p><a href="https://www.procon.gr.jp/?page_id=64541">全国高等専門学校プログラミングコンテスト2018</a> 競技部門に参加しました． 徳島県徳島市で開催され，1回戦敗退でした．（どうでもいいところで手間かかってるの草）</p>
+<p><a href="https://www.procon.gr.jp/?page_id=64541">全国高等専門学校プログラミングコンテスト2018</a> 競技部門に参加しました．
+徳島県徳島市で開催され，1回戦敗退でした．（どうでもいいところで手間かかってるの草）</p>
 <h1 id="ルール概要">ルール概要</h1>
 <p>陣取りゲームで，2プレイヤーがそれぞれの2つのエージェントを2プレイヤー同時に動かしていきます．</p>
 <figure>
-<img src="../images/procon2018/rule.jpg" width="500" />
+<img src="../images/procon2018/rule.jpg" width="500" alt="../images/procon2018/rule.jpg" />
 </figure>
 <blockquote>
 <p>Rule</p>
 </blockquote>
-<p>エージェントは8方向に動くことができます． エージェントが動いた後のマスは陣地となります． 陣地となったマスは相手チームのエージェントは入ることができません． 1ターン消費して．そのマスを陣地から解放する作業が必要になります． 得点としては2種類あって，まずは「占有得点」について説明します． 占有得点は，エージェントが通った後，陣地になったマスがそのまま得点となります． それぞれのマスに最大16点，最低-16点割り振られています． 一方，「包囲得点」は，陣地によってマスを囲むと，そのマスの絶対値が得点となります． つまり，-16のマスを占有で得点すると，16点引かれてしまうのに対して，囲って得点すると，16点もらえるということになります． 囲むときに，頂点の部分は陣地でなくても大丈夫です． <strong>エージェントの人と，司令塔は違う人です．エージェントの人とはトランプ通信でやり取りしなければなりません．</strong></p>
+<p>エージェントは8方向に動くことができます．
+エージェントが動いた後のマスは陣地となります．
+陣地となったマスは相手チームのエージェントは入ることができません．
+1ターン消費して．そのマスを陣地から解放する作業が必要になります．
+得点としては2種類あって，まずは「占有得点」について説明します．
+占有得点は，エージェントが通った後，陣地になったマスがそのまま得点となります．
+それぞれのマスに最大16点，最低-16点割り振られています．
+一方，「包囲得点」は，陣地によってマスを囲むと，そのマスの絶対値が得点となります．
+つまり，-16のマスを占有で得点すると，16点引かれてしまうのに対して，囲って得点すると，16点もらえるということになります．
+囲むときに，頂点の部分は陣地でなくても大丈夫です．
+<strong>エージェントの人と，司令塔は違う人です．エージェントの人とはトランプ通信でやり取りしなければなりません．</strong></p>
 <figure>
-<img src="../images/procon2018/main.png" width="500" />
+<img src="../images/procon2018/main.png" width="500" alt="../images/procon2018/main.png" />
 </figure>
 <blockquote>
 <p>Image</p>
 </blockquote>
 <p>詳しくは，<a href="2018-12-04-opensourcesalon.html">オープンソースサロンの記事</a>をご覧になると良いでしょう．</p>
 <h1 id="コンポーネント全体">コンポーネント全体</h1>
-<p>フィールド情報がQRコードで渡されます． QRコードを読み取ったり，AIの手を表示したりするInterfaceと，思考するAIに分かれます． 私はすべてに関わりました．</p>
+<p>フィールド情報がQRコードで渡されます．
+QRコードを読み取ったり，AIの手を表示したりするInterfaceと，思考するAIに分かれます．
+私はすべてに関わりました．</p>
 <h1 id="ipc">IPC</h1>
 <p>前回，WCFを用いていましたが，.NET Coreでは使えないので，TCPソケット通信を用いたIPCをしました．</p>
 <h1 id="interface">Interface</h1>
-<p>QRコードの読み取り，手の表示をしたりします． .Net Framework 4.7, WPF, ZXing.Netを用いました．</p>
+<p>QRコードの読み取り，手の表示をしたりします．
+.Net Framework 4.7, WPF, ZXing.Netを用いました．</p>
 <h1 id="ai">AI</h1>
-<p>交互ゲームとみなし，minimax法を用いました． 評価値の工夫として，そのままゲームの得点を使うのではなく，包囲得点を減点したり，自陣の分散度合いを吟味したりしました．</p>
+<p>交互ゲームとみなし，minimax法を用いました．
+評価値の工夫として，そのままゲームの得点を使うのではなく，包囲得点を減点したり，自陣の分散度合いを吟味したりしました．</p>
 <h1 id="裏プロコン">裏プロコン</h1>
 <p>本番がクソゲーだったので，学生間で裏プロコンが開催されました．（北九州高専さん呼びかけ）</p>
 <h2 id="vs-北九州">vs 北九州</h2>
 <p><strong>勝ち 19点差</strong></p>
 <p>相手は，ビームサーチでした．</p>
 <figure>
-<img src="../images/procon2018/北九州.png" width="500" />
+<img src="../images/procon2018/北九州.png" width="500" alt="../images/procon2018/北九州.png" />
 </figure>
 <blockquote>
 <p>vs Kitakyushu</p>
@@ -98,7 +113,7 @@
 <p><strong>勝ち 53点差</strong></p>
 <p>相手は，ビームサーチでした．</p>
 <figure>
-<img src="../images/procon2018/久留米.png" width="500" />
+<img src="../images/procon2018/久留米.png" width="500" alt="../images/procon2018/久留米.png" />
 </figure>
 <blockquote>
 <p>vs Kurume</p>
@@ -107,14 +122,15 @@
 <p><strong>負け 7点差</strong></p>
 <p>相手は，モンテカルロ+UCBでした．</p>
 <figure>
-<img src="../images/procon2018/茨城.png" width="500" />
+<img src="../images/procon2018/茨城.png" width="500" alt="../images/procon2018/茨城.png" />
 </figure>
 <blockquote>
 <p>vs Ibaraki</p>
 </blockquote>
 <h1 id="観想した感想">観想した感想</h1>
 <p>ゲームは良かったのになぁ…</p>
-<p>ビームサーチにはとても勝てる，モンテカルロとは互角なのかなぁ…？といった感じでした． 茨城と100回ぐらい戦ってみたい．</p>
+<p>ビームサーチにはとても勝てる，モンテカルロとは互角なのかなぁ…？といった感じでした．
+茨城と100回ぐらい戦ってみたい．</p>
     </section>
 </article>
 

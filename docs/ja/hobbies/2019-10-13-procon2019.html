@@ -44,7 +44,7 @@
     </section>
     <section class="tags">
         
-            <a href="../../ja/hobbies/tag/csharp.html">csharp</a><a href="../../ja/hobbies/tag/wpf.html">wpf</a><a href="../../ja/hobbies/tag/win32.html">win32</a><a href="../../ja/hobbies/tag/kosen-procon.html">kosen-procon</a><a href="../../ja/hobbies/tag/ai.html">ai</a>
+            <a title="All pages tagged 'csharp'." href="../../ja/hobbies/tag/csharp.html" rel="tag">csharp</a><a title="All pages tagged 'wpf'." href="../../ja/hobbies/tag/wpf.html" rel="tag">wpf</a><a title="All pages tagged 'win32'." href="../../ja/hobbies/tag/win32.html" rel="tag">win32</a><a title="All pages tagged 'kosen-procon'." href="../../ja/hobbies/tag/kosen-procon.html" rel="tag">kosen-procon</a><a title="All pages tagged 'ai'." href="../../ja/hobbies/tag/ai.html" rel="tag">ai</a>
         
     </section>
     <section>
@@ -55,36 +55,50 @@
 <li><a href="https://github.com/mct-procon/procon2019-protocol">GitHub Repository(Protocol)</a>: <a href="https://github.com/mct-procon/procon2019-protocol">https://github.com/mct-procon/procon2019-protocol</a></li>
 </ul>
 </blockquote>
-<p><a href>全国高等専門学校プログラミングコンテスト2019</a> 競技部門に参加しました． 宮崎県都城市で開催され，1回戦敗退でした．（チームの多くが通信できない）</p>
+<p><a href>全国高等専門学校プログラミングコンテスト2019</a> 競技部門に参加しました．
+宮崎県都城市で開催され，1回戦敗退でした．（チームの多くが通信できない）</p>
 <h1 id="ルール概要">ルール概要</h1>
 <p>陣取りゲームで，2プレイヤーがそれぞれ最大8つのエージェントを2プレイヤー同時に動かしていきます．</p>
 <figure>
-<img src="../images/procon2018/rule.jpg" width="500" />
+<img src="../images/procon2018/rule.jpg" width="500" alt="../images/procon2018/rule.jpg" />
 </figure>
 <blockquote>
 <p>Rule</p>
 </blockquote>
-<p>エージェントは8方向に動くことができます． エージェントが動いた後のマスは陣地となります． 陣地となったマスは相手チームのエージェントは入ることができません． 1ターン消費して．そのマスを陣地から解放する作業が必要になります． 得点としては2種類あって，まずは「占有得点」について説明します． 占有得点は，エージェントが通った後，陣地になったマスがそのまま得点となります． それぞれのマスに最大16点，最低-16点割り振られています． 一方，「包囲得点」は，陣地によってマスを囲むと，そのマスの絶対値が得点となります． つまり，-16のマスを占有で得点すると，16点引かれてしまうのに対して，囲って得点すると，16点もらえるということになります． 囲むときに，頂点の部分は陣地である必要があります．</p>
+<p>エージェントは8方向に動くことができます．
+エージェントが動いた後のマスは陣地となります．
+陣地となったマスは相手チームのエージェントは入ることができません．
+1ターン消費して．そのマスを陣地から解放する作業が必要になります．
+得点としては2種類あって，まずは「占有得点」について説明します．
+占有得点は，エージェントが通った後，陣地になったマスがそのまま得点となります．
+それぞれのマスに最大16点，最低-16点割り振られています．
+一方，「包囲得点」は，陣地によってマスを囲むと，そのマスの絶対値が得点となります．
+つまり，-16のマスを占有で得点すると，16点引かれてしまうのに対して，囲って得点すると，16点もらえるということになります．
+囲むときに，頂点の部分は陣地である必要があります．</p>
 <figure>
-<img src="../images/procon2019/Solver8.jpg" width="500" />
+<img src="../images/procon2019/Solver8.jpg" width="500" alt="../images/procon2019/Solver8.jpg" />
 </figure>
 <blockquote>
 <p>Image</p>
 </blockquote>
 <h1 id="コンポーネント全体">コンポーネント全体</h1>
-<p>サーバと通信したり，AIの手を表示したりするInterfaceと，思考するAIに分かれます． 私はすべてに関わりました．</p>
+<p>サーバと通信したり，AIの手を表示したりするInterfaceと，思考するAIに分かれます．
+私はすべてに関わりました．</p>
 <h1 id="ipc">IPC</h1>
 <p>前回から変更なしです．</p>
 <h1 id="interface">Interface</h1>
-<p>通信や，手の表示をしたりします． .NET CORE 3.0, WPF, ZXing.Netを用いました．</p>
+<p>通信や，手の表示をしたりします．
+.NET CORE 3.0, WPF, ZXing.Netを用いました．</p>
 <figure>
-<img src="../images/procon2019/Interface2020.jpg" width="500" />
+<img src="../images/procon2019/Interface2020.jpg" width="500" alt="../images/procon2019/Interface2020.jpg" />
 </figure>
 <blockquote>
 <p>Image</p>
 </blockquote>
 <h1 id="ai">AI</h1>
-<p>2体の場合は，交互ゲームとみなし，minimax法を用いました． エージェントの多い場合は，1体ずつ動かして，探索します． 評価値の工夫として，そのままゲームの得点を使うのではなく，包囲得点を減点したり，自陣の分散度合いを吟味したりしました．</p>
+<p>2体の場合は，交互ゲームとみなし，minimax法を用いました．
+エージェントの多い場合は，1体ずつ動かして，探索します．
+評価値の工夫として，そのままゲームの得点を使うのではなく，包囲得点を減点したり，自陣の分散度合いを吟味したりしました．</p>
 <h1 id="乾草した感想">乾草した感想</h1>
 <p>JSON解析部門ってマジですか！？</p>
 <p>テストプログラム事前に公開するって言ってたのに…約束守ってよ…ドキュメントも不明瞭でアッ…</p>

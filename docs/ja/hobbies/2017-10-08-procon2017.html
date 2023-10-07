@@ -44,7 +44,7 @@
     </section>
     <section class="tags">
         
-            <a href="../../ja/hobbies/tag/csharp.html">csharp</a><a href="../../ja/hobbies/tag/wpf.html">wpf</a><a href="../../ja/hobbies/tag/win32.html">win32</a><a href="../../ja/hobbies/tag/opencv.html">opencv</a><a href="../../ja/hobbies/tag/kosen-procon.html">kosen-procon</a>
+            <a title="All pages tagged 'csharp'." href="../../ja/hobbies/tag/csharp.html" rel="tag">csharp</a><a title="All pages tagged 'wpf'." href="../../ja/hobbies/tag/wpf.html" rel="tag">wpf</a><a title="All pages tagged 'win32'." href="../../ja/hobbies/tag/win32.html" rel="tag">win32</a><a title="All pages tagged 'opencv'." href="../../ja/hobbies/tag/opencv.html" rel="tag">opencv</a><a title="All pages tagged 'kosen-procon'." href="../../ja/hobbies/tag/kosen-procon.html" rel="tag">kosen-procon</a>
         
     </section>
     <section>
@@ -56,7 +56,8 @@
 <li><a href="https://github.com/mct-procon/procon2017-protocol">GitHub Repository(Protocol)</a>: <a href="https://github.com/mct-procon/procon2017-protocol">https://github.com/mct-procon/procon2017-protocol</a></li>
 </ul>
 </blockquote>
-<p><a href="https://www.procon.gr.jp/?page_id=59121">全国高等専門学校プログラミングコンテスト2017</a> 競技部門に参加しました． 山口県周南市で開催され，特別賞（3位相当）でした．（どうでもいいところで手間かかってるの草）</p>
+<p><a href="https://www.procon.gr.jp/?page_id=59121">全国高等専門学校プログラミングコンテスト2017</a> 競技部門に参加しました．
+山口県周南市で開催され，特別賞（3位相当）でした．（どうでもいいところで手間かかってるの草）</p>
 <h1 id="ルール概要">ルール概要</h1>
 <p>多角形パズル（物理）を渡されます．</p>
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); width: 100%;">
@@ -68,16 +69,21 @@
     <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2017/solver1.jpg" alt="Solving Puzzle"><br>Solving Puzzle</div>
     <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2017/solver2.png" alt="Solving Puzzle2"><br>Solving Puzzle2</div>
 </div>
-<p>前年と違うのは，QRコードでヒント情報や，そもそもの図形のベクトルデータが渡される点です． QRコードの情報を使うと，減点されます．</p>
+<p>前年と違うのは，QRコードでヒント情報や，そもそもの図形のベクトルデータが渡される点です．
+QRコードの情報を使うと，減点されます．</p>
 <h1 id="コンポーネント全体">コンポーネント全体</h1>
-<p>パズルをスキャナで読み取らずに，QRコードを読み取るスキャナ（PuzzleSupporter）と実際にパズルを解くソルバ（PuzzleSolver）に分かれます． スキャナは私が，ソルバはチームメンバの川上さんが担当しました． スキャナは，組み立てるときにどのピースが画面上のどこに配置されているか，を示してくれます． これによって，非常にパズルを速くくみ上げることに成功しました．（フレームにはまるとは言ってない）</p>
+<p>パズルをスキャナで読み取らずに，QRコードを読み取るスキャナ（PuzzleSupporter）と実際にパズルを解くソルバ（PuzzleSolver）に分かれます．
+スキャナは私が，ソルバはチームメンバの川上さんが担当しました．
+スキャナは，組み立てるときにどのピースが画面上のどこに配置されているか，を示してくれます．
+これによって，非常にパズルを速くくみ上げることに成功しました．（フレームにはまるとは言ってない）</p>
 <figure>
-<img src="../images/procon2017/hoge.jpg" width="500" />
+<img src="../images/procon2017/hoge.jpg" width="500" alt="../images/procon2017/hoge.jpg" />
 </figure>
 <blockquote>
 <p>Overview</p>
 </blockquote>
-<p>これは初期段階の絵で，実際は，下にディスプレイを敷いて，そのうえでパズルを組みます． 別の用途に使おうと思っていた私のアクリル板は犠牲となったのだ…</p>
+<p>これは初期段階の絵で，実際は，下にディスプレイを敷いて，そのうえでパズルを組みます．
+別の用途に使おうと思っていた私のアクリル板は犠牲となったのだ…</p>
 <h1 id="ipc">IPC</h1>
 <p>前回，テキストファイルのやり取りでスキャナとソルバ間の情報をやり取りしていたので，リアルタイムにすべく，Windows Communication Frameworkを用いてIPCしました．</p>
 <h1 id="スキャナ">スキャナ</h1>
@@ -87,9 +93,11 @@
     <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2017/scan3.jpg" alt="Binalize"><br>Binalize</div>
     <div style="margin: 2em"><img style="max-width: 100%;object-fit: scale-down;" src="../images/procon2017/scan4.jpg" alt="QR reading"><br>QR reading</div>
 </div>
-<p>詳しくはプロコン2016の記事を見ると良いでしょう．同じことをリアルタイムにやってるだけです． .Net Framework 4.5, WPF, Emgu.OpenCV 3.0, ZXing.Netを用いました．</p>
+<p>詳しくはプロコン2016の記事を見ると良いでしょう．同じことをリアルタイムにやってるだけです．
+.Net Framework 4.5, WPF, Emgu.OpenCV 3.0, ZXing.Netを用いました．</p>
 <h1 id="ソルバ">ソルバ</h1>
-<p>私が開発したわけではない（川上さん担当）ので，ざっと説明しますが，「結合度」による，「ビームサーチ」を行います． 結合度は，次の要因により増加します．</p>
+<p>私が開発したわけではない（川上さん担当）ので，ざっと説明しますが，「結合度」による，「ビームサーチ」を行います．
+結合度は，次の要因により増加します．</p>
 <blockquote>
 <ul>
 <li>辺の一致</li>
@@ -99,7 +107,7 @@
 </ul>
 </blockquote>
 <figure>
-<img src="../images/procon2017/connectivity.jpg" width="500" />
+<img src="../images/procon2017/connectivity.jpg" width="500" alt="../images/procon2017/connectivity.jpg" />
 </figure>
 <blockquote>
 <p>Connectivity</p>
@@ -108,7 +116,8 @@
 <p>Microsoft Visual C# 2015, DxLibを用いました．</p>
 <p>（実行画面は最初の方に出しています．）</p>
 <h1 id="完走した感想">完走した感想</h1>
-<p>1位のチームは，高そうなスキャナ2台ですか…やべぇ… もう少し画像処理能力を高めれたらなと思いましたが，1位のチームは去年からずっと研究していたそうです．やばいなぁ</p>
+<p>1位のチームは，高そうなスキャナ2台ですか…やべぇ…
+もう少し画像処理能力を高めれたらなと思いましたが，1位のチームは去年からずっと研究していたそうです．やばいなぁ</p>
 <p>ともかく，特別賞を頂けてよかったです．2年目ということもありスケジュール管理などがうまくいった気がします．</p>
 <h1 id="related-links">Related Links</h1>
 <blockquote>

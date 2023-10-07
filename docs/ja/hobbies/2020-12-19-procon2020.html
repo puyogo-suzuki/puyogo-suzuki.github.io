@@ -44,7 +44,7 @@
     </section>
     <section class="tags">
         
-            <a href="../../ja/hobbies/tag/csharp.html">csharp</a><a href="../../ja/hobbies/tag/wpf.html">wpf</a><a href="../../ja/hobbies/tag/win32.html">win32</a><a href="../../ja/hobbies/tag/kosen-procon.html">kosen-procon</a><a href="../../ja/hobbies/tag/ai.html">ai</a>
+            <a title="All pages tagged 'csharp'." href="../../ja/hobbies/tag/csharp.html" rel="tag">csharp</a><a title="All pages tagged 'wpf'." href="../../ja/hobbies/tag/wpf.html" rel="tag">wpf</a><a title="All pages tagged 'win32'." href="../../ja/hobbies/tag/win32.html" rel="tag">win32</a><a title="All pages tagged 'kosen-procon'." href="../../ja/hobbies/tag/kosen-procon.html" rel="tag">kosen-procon</a><a title="All pages tagged 'ai'." href="../../ja/hobbies/tag/ai.html" rel="tag">ai</a>
         
     </section>
     <section>
@@ -55,38 +55,51 @@
 <li><a href="https://github.com/mct-procon/procon2020-protocol">GitHub Repository(Protocol)</a>: <a href="https://github.com/mct-procon/procon2020-protocol">https://github.com/mct-procon/procon2020-protocol</a></li>
 </ul>
 </blockquote>
-<p>非公式 全国高等専門学校プログラミングコンテスト2020 競技部門に参加しました． オンラインで開催され，優勝でした．（じゃんけん）</p>
+<p>非公式 全国高等専門学校プログラミングコンテスト2020 競技部門に参加しました．
+オンラインで開催され，優勝でした．（じゃんけん）</p>
 <h1 id="ルール概要">ルール概要</h1>
 <p>陣取りゲームで，2プレイヤーがそれぞれ最大16のエージェントを2プレイヤー同時に動かしていきます．</p>
 <figure>
-<img src="../images/procon2018/rule.jpg" width="500" />
+<img src="../images/procon2018/rule.jpg" width="500" alt="../images/procon2018/rule.jpg" />
 </figure>
 <blockquote>
 <p>Rule</p>
 </blockquote>
-<p>エージェントは8方向に動くことができます． エージェントが動いた後のマスは陣地となります． 陣地となったマスは相手チームのエージェントは入ることができません． 1ターン消費して．そのマスを陣地から解放する作業が必要になります． 得点としては2種類あって，まずは「占有得点」について説明します． 占有得点は，エージェントが通った後，陣地になったマスがそのまま得点となります． それぞれのマスに最大16点，最低-16点割り振られています． 一方，「包囲得点」は，陣地によってマスを囲むと，そのマスの絶対値が得点となります． つまり，-16のマスを占有で得点すると，16点引かれてしまうのに対して，囲って得点すると，16点もらえるということになります． 囲むときに，頂点の部分は陣地である必要があります．</p>
+<p>エージェントは8方向に動くことができます．
+エージェントが動いた後のマスは陣地となります．
+陣地となったマスは相手チームのエージェントは入ることができません．
+1ターン消費して．そのマスを陣地から解放する作業が必要になります．
+得点としては2種類あって，まずは「占有得点」について説明します．
+占有得点は，エージェントが通った後，陣地になったマスがそのまま得点となります．
+それぞれのマスに最大16点，最低-16点割り振られています．
+一方，「包囲得点」は，陣地によってマスを囲むと，そのマスの絶対値が得点となります．
+つまり，-16のマスを占有で得点すると，16点引かれてしまうのに対して，囲って得点すると，16点もらえるということになります．
+囲むときに，頂点の部分は陣地である必要があります．</p>
 <figure>
-<img src="../images/procon2020/normal.png" width="1000" />
+<img src="../images/procon2020/normal.png" width="1000" alt="../images/procon2020/normal.png" />
 </figure>
 <blockquote>
 <p>Fighting</p>
 </blockquote>
 <h1 id="コンポーネント全体">コンポーネント全体</h1>
-<p>サーバと通信したり，AIの手を表示したりするInterfaceと，思考するAIに分かれます． 私はすべて作りました． .NET CORE 3.1, WPFを用いました．</p>
+<p>サーバと通信したり，AIの手を表示したりするInterfaceと，思考するAIに分かれます．
+私はすべて作りました．
+.NET CORE 3.1, WPFを用いました．</p>
 <h1 id="ipc">IPC</h1>
 <p>前回から変更なしです．</p>
 <h1 id="interface">Interface</h1>
 <p>通信や，手の表示をしたりします．</p>
 <figure>
-<img src="../images/procon2020/test.png" width="1000" />
+<img src="../images/procon2020/test.png" width="1000" alt="../images/procon2020/test.png" />
 </figure>
 <blockquote>
 <p>Test with sample server</p>
 </blockquote>
 <h1 id="ai">AI</h1>
-<p>エージェントを1体ずつ動かして，並列に探索します． 評価値の工夫として，そのままゲームの得点を使うのではなく，包囲得点を減点したり，自陣の分散度合いを吟味したりしました．</p>
+<p>エージェントを1体ずつ動かして，並列に探索します．
+評価値の工夫として，そのままゲームの得点を使うのではなく，包囲得点を減点したり，自陣の分散度合いを吟味したりしました．</p>
 <figure>
-<img src="../images/procon2020/multithread.png" width="1000" />
+<img src="../images/procon2020/multithread.png" width="1000" alt="../images/procon2020/multithread.png" />
 </figure>
 <blockquote>
 <p>Happy at multithreading</p>
@@ -94,12 +107,14 @@
 <p>256スレッド（2NUMAノード）のEPYCプロセッサをめいっぱい動かして楽しんでいます．</p>
 <h1 id="完走した感想">完走した感想</h1>
 <figure>
-<img src="../images/procon2020/display.jpg" width="1000" />
+<img src="../images/procon2020/display.jpg" width="1000" alt="../images/procon2020/display.jpg" />
 </figure>
 <blockquote>
 <p>Seeking from real world</p>
 </blockquote>
-<p>今回，大きい，中，小さいフィールド3種類で対戦しました．（vs 久留米，東京，舞鶴） それぞれのAIで強い弱いが変わり，最終的に均衡するのが面白いです． なので，東京，久留米，松江は同率一位となり，じゃんけんで松江高専が優勝しました．（えぇ…）</p>
+<p>今回，大きい，中，小さいフィールド3種類で対戦しました．（vs 久留米，東京，舞鶴）
+それぞれのAIで強い弱いが変わり，最終的に均衡するのが面白いです．
+なので，東京，久留米，松江は同率一位となり，じゃんけんで松江高専が優勝しました．（えぇ…）</p>
 <p>ちなみに，並列化の効能ですが，深さが1つ深く読める程度です（そりゃそうだ）</p>
 <h1 id="related-links">Related Links</h1>
 <blockquote>

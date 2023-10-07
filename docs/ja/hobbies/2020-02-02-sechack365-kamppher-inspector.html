@@ -44,55 +44,62 @@
     </section>
     <section class="tags">
         
-            <a href="../../ja/hobbies/tag/fpga.html">fpga</a><a href="../../ja/hobbies/tag/socfpga.html">socfpga</a><a href="../../ja/hobbies/tag/quartus.html">quartus</a><a href="../../ja/hobbies/tag/chisel.html">chisel</a><a href="../../ja/hobbies/tag/scala.html">scala</a><a href="../../ja/hobbies/tag/fsharp.html">fsharp</a><a href="../../ja/hobbies/tag/monogame.html">monogame</a><a href="../../ja/hobbies/tag/sechack365.html">sechack365</a>
+            <a title="All pages tagged 'fpga'." href="../../ja/hobbies/tag/fpga.html" rel="tag">fpga</a><a title="All pages tagged 'socfpga'." href="../../ja/hobbies/tag/socfpga.html" rel="tag">socfpga</a><a title="All pages tagged 'quartus'." href="../../ja/hobbies/tag/quartus.html" rel="tag">quartus</a><a title="All pages tagged 'chisel'." href="../../ja/hobbies/tag/chisel.html" rel="tag">chisel</a><a title="All pages tagged 'scala'." href="../../ja/hobbies/tag/scala.html" rel="tag">scala</a><a title="All pages tagged 'fsharp'." href="../../ja/hobbies/tag/fsharp.html" rel="tag">fsharp</a><a title="All pages tagged 'monogame'." href="../../ja/hobbies/tag/monogame.html" rel="tag">monogame</a><a title="All pages tagged 'sechack365'." href="../../ja/hobbies/tag/sechack365.html" rel="tag">sechack365</a>
         
     </section>
     <section>
         <p>KAMPPHERのビジュアライザKAMPPHER Inspectorです．ChiselやF#を用いて実装しました．</p>
 <figure>
-<img src="../images/sechack365/Overview.svg" width="1000" />
+<img src="../images/sechack365/Overview.svg" width="1000" alt="../images/sechack365/Overview.svg" />
 </figure>
 <blockquote>
 <p>Components(from development figure)</p>
 </blockquote>
 <figure>
-<img src="../images/sechack365/inspector-first.jpg" width="500" />
+<img src="../images/sechack365/inspector-first.jpg" width="500" alt="../images/sechack365/inspector-first.jpg" />
 </figure>
 <blockquote>
 <p>First version of KAMPPHER Inspector</p>
 </blockquote>
 <figure>
-<img src="../images/sechack365/inspector-initial.jpg" width="500" />
+<img src="../images/sechack365/inspector-initial.jpg" width="500" alt="../images/sechack365/inspector-initial.jpg" />
 </figure>
 <blockquote>
 <p>Second version of KAMPPHER Inspector</p>
 </blockquote>
 <figure>
-<img src="../images/sechack365/inspector-early.jpg" width="1000" />
+<img src="../images/sechack365/inspector-early.jpg" width="1000" alt="../images/sechack365/inspector-early.jpg" />
 </figure>
 <blockquote>
 <p>Early version of KAMPPHER Inspector</p>
 </blockquote>
 <figure>
-<img src="../images/sechack365/inspector-reference.jpg" width="1000" />
+<img src="../images/sechack365/inspector-reference.jpg" width="1000" alt="../images/sechack365/inspector-reference.jpg" />
 </figure>
 <blockquote>
 <p>KAMPPHER Inspector Reading</p>
 </blockquote>
 <figure>
-<img src="../images/sechack365/inspector-error.jpg" width="1000" />
+<img src="../images/sechack365/inspector-error.jpg" width="1000" alt="../images/sechack365/inspector-error.jpg" />
 </figure>
 <blockquote>
 <p>KAMPPHER Inspector Write Error</p>
 </blockquote>
 <h1 id="soc内通信">SoC内通信</h1>
-<p>もともとKAMPPHERのデバッグにSoC FPGAでやっていました．（SignalTapが無料で使えることを知りませんでした．） それを流用してInspectorはちょちょいのちょいで完成しました．</p>
+<p>もともとKAMPPHERのデバッグにSoC FPGAでやっていました．（SignalTapが無料で使えることを知りませんでした．）
+それを流用してInspectorはちょちょいのちょいで完成しました．</p>
 <p><code>mmap</code>とポインタ使える関数型言語はF#だけでは？？</p>
 <h1 id="ネットワーク通信">ネットワーク通信</h1>
-<p>MagicOnion使おうと思いましたが，ARMではgRPCが動かないようです．（自分でビルドする必要があります） 締め切り間近なので，高専プロコンのIPCのコードをパクりました．</p>
+<p>MagicOnion使おうと思いましたが，ARMではgRPCが動かないようです．（自分でビルドする必要があります）
+締め切り間近なので，高専プロコンのIPCのコードをパクりました．</p>
 <h1 id="グラフィック">グラフィック</h1>
-<p>とりあえずMonogame使いました．Unityとかわからん． Arduino UNOのモデル使っていますが，本当に動いているのはESP32です． だって，ESP32のモデル見つからなかったから… M5Stackはマイコン感が出ないので却下です．</p>
-<p>弾丸は若干ずらしている． そうしないと一本の線に見えてしまうからである． でもやっぱりダサいような気がする…</p>
+<p>とりあえずMonogame使いました．Unityとかわからん．
+Arduino UNOのモデル使っていますが，本当に動いているのはESP32です．
+だって，ESP32のモデル見つからなかったから…
+M5Stackはマイコン感が出ないので却下です．</p>
+<p>弾丸は若干ずらしている．
+そうしないと一本の線に見えてしまうからである．
+でもやっぱりダサいような気がする…</p>
 <h1 id="related-links">Related Links</h1>
 <blockquote>
 <ul>
