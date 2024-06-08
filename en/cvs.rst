@@ -1,17 +1,12 @@
 ---
 title: CVs
-date: 2023-10-07
-lastdate: 2023-10-07
+date: 2024-06-08
+lastdate: 2024-06-08
 ---
 
 
 Upcoming
 ==========
-
-Proceedings (referred)
-------------------------
-Go Suzuki, Akihiko Yokoyama, Takuo Watanabe, Sosuke Moriguchi: Using Low Power Coprocessors in an FRP Language for Embedded Systems, `Asia Pacific Conference on Robot IoT System Development and Platform (APRIS) 2023`_, 2023/11
-
 
 Past
 ==========
@@ -19,13 +14,23 @@ Past
 Proceedings (referred)
 ---------------------------
 
+Go Suzuki, Akihiko Yokoyama, Takuo Watanabe, Sosuke Moriguchi: Using Low Power Coprocessors in an FRP Language for Embedded Systems, `Asia Pacific Conference on Robot IoT System Development and Platform (APRIS) 2023`_, 2023/11
+
 Go Suzuki, Takuo Watanabe, Sosuke Moriguchi: `Implementation and Evaluation of an Interpreter for Functional Reactive Programming on Small Embedded Devices`_, `7th International Workshop on Modern Language Runtimes, Ecosystems, and VMs (MoreVMs 2023)`_, Companion Proceedings of the 7th International Conference on the Art, Science, and Engineering of Programming, ACM, pp. 12-16, 2023/3
 
 Poster Session (non-referred)
 ------------------------------
+鈴木豪, 渡部卓雄, 森口草介: マイコンの省電力コプロセッサを活用できる動的コンパイラの実装に向けて, `日本ソフトウェア科学会第26回プログラミングおよびプログラミング言語ワークショップ(PPL 2024)`_, Mar. 2024.  
+
+((Translated) Go Suzuki, Takuo Watanabe, Sosuke Moriguchi: Toward a dynamic compiler for low power coprocessors of microcontrollers, `26th Workshop on Programming an Programming Languages (PPL 2024)`_, Japan Society for Software Science and Technology, 2024/3)
+
+--------------------
+
 鈴木豪, 横山陽彦, 森口草介, 渡部卓雄: 対話的な組込み用FRP言語インタプリタとFRP言語における省電力コプロセッサの活用, `第25回組込みシステム技術に関するサマーワークショップ(SWEST25)`_, 2023/8
 
 ((Translated) Go Suzuki, Akihiko Yokoyama, Sosuke Moriguchi, Takuo Watanabe: An FRP Programming Language Interpreter for Embedded Systems and Exploiting a Low Power Coprocessor in an FRP Language, `25th Summer Workshop on Embedded System Technologies (SWEST25)`_, 2023/8)
+
+--------------------
 
 鈴木豪, 渡部卓雄, 森口草介: REPLをサポートする小規模組込み機器向けFRP言語処理系の実装と評価, `日本ソフトウェア科学会第25回プログラミングおよびプログラミング言語ワークショップ(PPL 2023)`_, Mar. 2023. 
 
@@ -43,3 +48,5 @@ Go Suzuki, Masaki Iwasawa, Junichiro Makino: Optimization of the code generated 
 .. _`日本ソフトウェア科学会第25回プログラミングおよびプログラミング言語ワークショップ(PPL 2023)`: https://jssst-ppl.org/workshop/2023/
 .. _`25th Workshop on Programming an Programming Languages (PPL 2023)`: https://jssst-ppl.org/workshop/2023/
 .. _`Student Research Competition@ICFP2022 (ACM)`: https://icfp22.sigplan.org/track/icfp-2022-student-research-competition#event-overview
+.. _`日本ソフトウェア科学会第26回プログラミングおよびプログラミング言語ワークショップ(PPL 2024)`: https://jssst-ppl.org/workshop/2024/
+.. _`26th Workshop on Programming an Programming Languages (PPL 2024)`: https://jssst-ppl.org/workshop/2024/
