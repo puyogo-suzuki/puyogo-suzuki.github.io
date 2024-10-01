@@ -1,7 +1,7 @@
 ---
 title: About
-date: 2023-10-07
-lastdate: 2023-10-07
+date: 2024-10-02
+lastdate: 2024-10-02
 ---
 
 .. image::images/profile/hacker.jpg
@@ -13,37 +13,37 @@ lastdate: 2023-10-07
 
 Education
 ---------------------
- * 2016-2020 Department of Information Technology, National Instutite of Technology, Matsue College
- * 2021-2022 School of Computing, Department of Computer Science, Tokyo Institute of Techonology (Bachelor)
- * 2023- School of Computing, Department of Computer Science, Tokyo Institute of Techonology (Master)
+* 2016.4-2021.3 Department of Information Technology, National Instutite of Technology, Matsue College
+* 2021.4-2023.3 School of Computing, Department of Computer Science, Tokyo Institute of Techonology (Bachelor)
+* 2023.4- School of Computing, Department of Computer Science, Institute of Science Tokyo (Formally, Tokyo Institute of Techonology) (Master)
 
 Degree : Bachelor (Eng)
 
 Target
 -------------------
- * Not only fast, also ecology.
- * Not only one component, many components co-operate to optimize the work.
+* Not only fast, also ecology.
+* Not only one component, many components co-operate to optimize the work.
 
 Current Study Field (?)
 ----------------------------------
- * compiler
- * FPGA
- * high performance computing
- * programming languages
+* compiler
+* FPGA
+* high performance computing
+* programming languages
 
 
 Interested in ...(Not Familier)
 -------------------------------------
- * compiler
- * computer architecture
- * computer graphics
- * computer network
- * data compression
- * game AI
- * high performance computing
- * image/video processing
- * programming languages
- * software engineering
+* compiler
+* computer architecture
+* computer graphics
+* computer network
+* data compression
+* game AI
+* high performance computing
+* image/video processing
+* programming languages
+* software engineering
 
 Tools I'm using
 -----------------
@@ -52,35 +52,35 @@ The higher, the more frequenctly I use.
 Programming Languages
 ***********************
 
- * Haskell, C, F#, Rust
- * C#, TypeScript
- * Emacs Lisp, Python, Ruby, OCaml, Nemerle, Scala (Chisel)
- * D, Visual Basic.net, C++17, Java, Perl
- * Objective-C, Fortran, Julia, Crystal, Delphi/Free Pascal, Go
+* Haskell, C, F#, Rust
+* C#, TypeScript
+* Emacs Lisp, Python, Ruby, OCaml, Nemerle, Scala (Chisel)
+* D, Visual Basic.net, C++17, Java, Perl, Raku
+* Objective-C, Fortran, Julia, Crystal, Delphi/Free Pascal, Go
 
 Operating Systems
 ****************************
 
- * Windows 10/11
- * DragonFly
- * macOS
- * Debian
- * FreeBSD
+* Windows 10/11
+* DragonFly
+* macOS
+* Debian
+* FreeBSD
 
 Web Browsers
 **************
 
- * Mozilla Firefox
- * Microsoft Edge
+* Mozilla Firefox
+* Microsoft Edge
 
 Text Editors
 ******************
 
- * Visual Studio 2022
- * GNU Emacs
- * Visual Studio Code
- * GNU nano
- * ex editor
+* Visual Studio 2022
+* GNU Emacs
+* Visual Studio Code
+* GNU nano
+* ex editor
 
 Now using machines
 -------------------

@@ -1,7 +1,7 @@
 ---
 title: 自己紹介
-date: 2023-10-07
-lastdate: 2023-10-07
+date: 2024-10-02
+lastdate: 2024-10-02
 ---
 
 .. image::images/profile/hacker.jpg
@@ -14,36 +14,36 @@ lastdate: 2023-10-07
 
 教育過程
 -----
- * 2016-2020 松江工業高等専門学校，情報工学科
- * 2021-2022 東京工業大学，情報理工学院情報工学系（学士課程）
- * 2023- 東京工業大学，情報理工学院情報工学系情報工学コース（修士課程）
+* 2016.4-2021.3 松江工業高等専門学校，情報工学科
+* 2021.4-2023.3 東京工業大学，情報理工学院情報工学系（学士課程）
+* 2023.4- 東京科学大学（旧東京工業大学），情報理工学院情報工学系情報工学コース（修士課程）
 
 学位：学士（工学）
 
 興味の対象
 ---------------
- * 速いだけでなく地球にやさしい
- * 一つのレイヤ/コンポーネントだけでなく三位一体で達成する最適化
+* 速いだけでなく地球にやさしい
+* 一つのレイヤ/コンポーネントだけでなく三位一体で達成する最適化
 
 今のところの専門分野（？）
 ------------------------
- * FPGA
- * コンパイラ
- * ハイパフォーマンスコンピューティング
- * プログラミング言語
+* FPGA
+* コンパイラ
+* ハイパフォーマンスコンピューティング
+* プログラミング言語
 
 興味がある（だけ）
 ------------------
- * 計算機アーキテクチャ
- * ハイパフォーマンスコンピューティング
- * ゲームAI
- * コンパイラ
- * プログラミング言語
- * ソフトウェア工学
- * コンピュータグラフィクス
- * 画像処理
- * コンピュータネットワーク
- * データ圧縮
+* 計算機アーキテクチャ
+* ハイパフォーマンスコンピューティング
+* ゲームAI
+* コンパイラ
+* プログラミング言語
+* ソフトウェア工学
+* コンピュータグラフィクス
+* 画像処理
+* コンピュータネットワーク
+* データ圧縮
 
 使ってるツール
 -----------------
@@ -52,35 +52,35 @@ lastdate: 2023-10-07
 プログラミング言語
 ***********************
 
- * Haskell, C, F#, Rust
- * C#, TypeScript
- * Emacs Lisp, Python, Ruby, OCaml, Nemerle, Scala (Chisel)
- * D, Visual Basic.net, C++17, Java, Perl
- * Objective-C, Fortran, Julia, Crystal, Delphi/Free Pascal, Go
+* Haskell, C, F#, Rust
+* C#, TypeScript
+* Emacs Lisp, Python, Ruby, OCaml, Nemerle, Scala (Chisel)
+* D, Visual Basic.net, C++17, Java, Perl, Raku
+* Objective-C, Fortran, Julia, Crystal, Delphi/Free Pascal, Go
 
 オペレーティングシステム
 ****************************
 
- * Windows 10/11
- * DragonFly
- * macOS
- * Debian
- * FreeBSD
+* Windows 10/11
+* DragonFly
+* macOS
+* Debian
+* FreeBSD
 
 Webブラウザ
 **************
 
- * Mozilla Firefox
- * Microsoft Edge
+* Mozilla Firefox
+* Microsoft Edge
 
 テキストエディタ
 ******************
 
- * Visual Studio 2022
- * GNU Emacs
- * Visual Studio Code
- * GNU nano
- * ex editor
+* Visual Studio 2022
+* GNU Emacs
+* Visual Studio Code
+* GNU nano
+* ex editor
 
 使っている計算機
 ---------------
