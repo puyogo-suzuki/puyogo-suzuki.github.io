@@ -1,7 +1,7 @@
 ---
 title: 自己紹介
-date: 2024-10-02
-lastdate: 2024-10-02
+date: 2024-11-24
+lastdate: 2024-11-24
 ---
 
 .. image::images/profile/hacker.jpg
@@ -30,7 +30,6 @@ lastdate: 2024-10-02
 * FPGA
 * コンパイラ
 * ハイパフォーマンスコンピューティング
-* プログラミング言語
 
 興味がある（だけ）
 ------------------
@@ -92,7 +91,6 @@ Webブラウザ
 * 自作PC, Ryzen 7 3700X, Radeon RX 560 4GB, 32GiB Memory, Windows 11
 * Latitude 12 7275, Core m5 6Y57 (Skylake), 8GiB Memory, Windows 11
 * ThinkPad E440, Core i5 4210M (Haswell), GeForce GT 740M, 16 GiB Memory, Windows 10
-* HPのAMD Pumaマシン, Ubuntu MATE
 * Eee PC Celeronマシン（Pentium M世代）, Windows 2000
 
 * Core i3 4160T, 8GiB Memory, DragonFly BSD
@@ -103,6 +101,7 @@ Webブラウザ
 過去
 ******
 
+* HPのAMD Pumaマシン, Ubuntu MATE（人に）
 * ThinkPad A485, Ryzen 5 2500U, 16GiB Memory, Windows 10（電源死んだ）
 * Bangbang Game, AMD Puma, 4GiB Memory, Windows 10（電源死んだ）
 * ThinkPad E130, Core i3 (IvyBridge), 8GiB Memory, Windows 10（人に）

@@ -1,7 +1,7 @@
 ---
 title: About
-date: 2024-10-02
-lastdate: 2024-10-02
+date: 2024-11-24
+lastdate: 2024-11-24
 ---
 
 .. image::images/profile/hacker.jpg
@@ -92,22 +92,21 @@ Present
 * Homebuilt PC, Ryzen 7 3700X, Radeon RX 560 4GB, 32GiB Memory, Windows 11
 * Latitude 12 7275, Core m5 6Y57 (Skylake), 8GiB Memory, Windows 11
 * ThinkPad E440, Core i5 4210M (Haswell), GeForce GT 740M, 16 GiB Memory, Windows 10
-* HP AMD Puma, Ubuntu MATE
 * Eee PC Celeron（Pentium M Generation）, Windows 2000
 
 * Core i3 4160T, 8GiB Memory, DragonFly BSD
 * Core i3 4160T, 4GiB Memory, Debian
 * NUC6i5SYH, Core i5 6260U, 16GiB Memory, Debian
 
-
 Past
 ******
 
+* HP AMD Puma, Ubuntu MATE (Given to a friend)
 * ThinkPad A485, Ryzen 5 2500U, 16GiB Memory, Windows 10（Power died）
 * Bangbang Game, AMD Puma, 4GiB Memory, Windows 10（Power died）
-* ThinkPad E130, Core i3 (IvyBridge), 8GiB Memory, Windows 10（Gave to a friend）
+* ThinkPad E130, Core i3 (IvyBridge), 8GiB Memory, Windows 10（Given to a friend）
 * MacBook Pro 2011 Early, Core i7 (SandyBridge), 8GiB Memory, Ubuntu MATE（Worked hard）
-* MacBook Air 2009, Core 2 Duo, 4GiB Memory, macOS High Sierra（Gave to a friend）
+* MacBook Air 2009, Core 2 Duo, 4GiB Memory, macOS High Sierra（Given to a friend）
 * SOTEC laptop, Core 2 Duo, 4GiB Memory, Windows 8.1（Something wrong）
 * ThinkPad R61, Core 2 Duo T7100, 4GiB Memory, Windows 7（Worked hard）
 * TOSHIBA Satelite, Celeron M, Windows xp（Fan Error）
