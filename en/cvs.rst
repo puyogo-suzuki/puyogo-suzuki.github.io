@@ -1,14 +1,10 @@
 ---
 title: CVs
-date: 2024-06-08
-lastdate: 2024-06-08
+date: 2024-11-24
+lastdate: 2024-11-24
 ---
 
-
-Upcoming
-==========
-
-Past
+Computer Science
 ==========
 
 Proceedings (referred)
@@ -20,7 +16,7 @@ Go Suzuki, Takuo Watanabe, Sosuke Moriguchi: `Implementation and Evaluation of a
 
 Poster Session (non-referred)
 ------------------------------
-鈴木豪, 渡部卓雄, 森口草介: マイコンの省電力コプロセッサを活用できる動的コンパイラの実装に向けて, `日本ソフトウェア科学会第26回プログラミングおよびプログラミング言語ワークショップ(PPL 2024)`_, Mar. 2024.  
+鈴木豪, 渡部卓雄, 森口草介: マイコンの省電力コプロセッサを活用できる動的コンパイラの実装に向けて, `日本ソフトウェア科学会第26回プログラミングおよびプログラミング言語ワークショップ(PPL 2024)`_, 2024/3.  
 
 ((Translated) Go Suzuki, Takuo Watanabe, Sosuke Moriguchi: Toward a dynamic compiler for low power coprocessors of microcontrollers, `26th Workshop on Programming an Programming Languages (PPL 2024)`_, Japan Society for Software Science and Technology, 2024/3)
 
@@ -32,7 +28,7 @@ Poster Session (non-referred)
 
 --------------------
 
-鈴木豪, 渡部卓雄, 森口草介: REPLをサポートする小規模組込み機器向けFRP言語処理系の実装と評価, `日本ソフトウェア科学会第25回プログラミングおよびプログラミング言語ワークショップ(PPL 2023)`_, Mar. 2023. 
+鈴木豪, 渡部卓雄, 森口草介: REPLをサポートする小規模組込み機器向けFRP言語処理系の実装と評価, `日本ソフトウェア科学会第25回プログラミングおよびプログラミング言語ワークショップ(PPL 2023)`_, 2023/3. 
 
 ((Translated) Go Suzuki, Takuo Watanabe, Sosuke Moriguchi: An FRP Programming Language Implementation with REPL Support for Small Embedded Devices, `25th Workshop on Programming an Programming Languages (PPL 2023)`_, Japan Society for Software Science and Technology, 2023/3)
 
