@@ -1,7 +1,7 @@
 ---
 title: About
-date: 2024-11-24
-lastdate: 2024-11-24
+date: 2025-3-23
+lastdate: 2025-3-23
 ---
 
 .. image::images/profile/hacker.jpg
@@ -52,9 +52,9 @@ The higher, the more frequenctly I use.
 Programming Languages
 ***********************
 
-* Haskell, C, F#, Rust
-* C#, TypeScript
-* Emacs Lisp, Python, Ruby, OCaml, Nemerle, Scala (Chisel)
+* Haskell, C, C#, F#
+* TypeScript, Rust, Ruby  
+* Emacs Lisp, Python, OCaml, Nemerle, Scala (Chisel)
 * D, Visual Basic.net, C++17, Java, Perl, Raku
 * Objective-C, Fortran, Julia, Crystal, Delphi/Free Pascal, Go
 
@@ -91,7 +91,7 @@ Present
 * ThinkPad P14s Gen 2, Ryzen 7 5850U, 32GiB Memory, Windows 11
 * Homebuilt PC, Ryzen 7 3700X, Radeon RX 560 4GB, 32GiB Memory, Windows 11
 * Latitude 12 7275, Core m5 6Y57 (Skylake), 8GiB Memory, Windows 11
-* ThinkPad E440, Core i5 4210M (Haswell), GeForce GT 740M, 16 GiB Memory, Windows 10
+* ThinkPad A485, Ryzen 5 2500U, 8GiB Memory, Windows 11
 * Eee PC Celeron（Pentium M Generation）, Windows 2000
 
 * Core i3 4160T, 8GiB Memory, DragonFly BSD
@@ -102,10 +102,10 @@ Past
 ******
 
 * HP AMD Puma, Ubuntu MATE (Given to a friend)
-* ThinkPad A485, Ryzen 5 2500U, 16GiB Memory, Windows 10（Power died）
+* ThinkPad E440, Core i5 4210M (Haswell), GeForce GT 740M, 16 GiB Memory, Windows 10 (Worked well)  
 * Bangbang Game, AMD Puma, 4GiB Memory, Windows 10（Power died）
 * ThinkPad E130, Core i3 (IvyBridge), 8GiB Memory, Windows 10（Given to a friend）
-* MacBook Pro 2011 Early, Core i7 (SandyBridge), 8GiB Memory, Ubuntu MATE（Worked hard）
+* MacBook Pro 2011 Early, Core i7 (SandyBridge), 8GiB Memory, Ubuntu MATE（Worked well）
 * MacBook Air 2009, Core 2 Duo, 4GiB Memory, macOS High Sierra（Given to a friend）
 * SOTEC laptop, Core 2 Duo, 4GiB Memory, Windows 8.1（Something wrong）
 * ThinkPad R61, Core 2 Duo T7100, 4GiB Memory, Windows 7（Worked hard）
